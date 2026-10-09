@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Infográfico: Medidor Inteligente CMOS de Baixo Consumo</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0f172a;
+      color: #f8fafc;
+      display: flex;
+      justify-content: center;
+      padding: 30px;
+      margin: 0;
+    }
+    .infographic {
+      width: 100%;
+      max-width: 800px;
+      background: #1e293b;
+      border-radius: 16px;
+      padding: 30px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+      border: 1px solid #334155;
+    }
+    .header {
+      text-align: center;
+      border-bottom: 2px solid #3b82f6;
+      padding-bottom: 20px;
+      margin-bottom: 30px;
+    }
+    .header h1 {
+      color: #38bdf8;
+      font-size: 1.8rem;
+      margin: 0 0 10px 0;
+    }
+    .header p {
+      color: #94a3b8;
+      margin: 0;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin-bottom: 30px;
+    }
+    .card {
+      background: #0f172a;
+      padding: 20px;
+      border-radius: 12px;
+      border-left: 4px solid #38bdf8;
+    }
+    .card h3 {
+      margin-top: 0;
+      color: #38bdf8;
+      font-size: 1.1rem;
+    }
+    .card p {
+      font-size: 0.9rem;
+      color: #cbd5e1;
+      line-height: 1.4;
+    }
+    .metrics {
+      display: flex;
+      justify-content: space-around;
+      background: #0284c7;
+      padding: 20px;
+      border-radius: 12px;
+      text-align: center;
+    }
+    .metric-item h2 {
+      margin: 0;
+      font-size: 1.8rem;
+      color: #ffffff;
+    }
+    .metric-item p {
+      margin: 5px 0 0 0;
+      font-size: 0.85rem;
+      color: #e0f2fe;
+    }
+  </style>
+</head>
+<body>
+
+<div class="infographic">
+  <div class="header">
+    <h1>Medidor de Energia CMOS de Baixo Consumo</h1>
+    <p>Arquitetura Otimizada para Sistemas Inteligentes (SoC)</p>
+  </div>
+
+  <div class="grid">
+    <div class="card" style="border-color: #38bdf8;">
+      <h3>1. Modulador PSDM</h3>
+      <p><b>Amostragem Dupla:</b> Processa 2 amostras em paralelo por ciclo, cortando o <i>clock</i> pela metade sem perder precisão.</p>
+    </div>
+    <div class="card" style="border-color: #4ade80;">
+      <h3>2. Multiplicador com Bypass</h3>
+      <p><b>Cálculo Inteligente:</b> Detecta produtos parciais nulos e desliga somadores ociosos temporariamente.</p>
+    </div>
+    <div class="card" style="border-color: #facc15;">
+      <h3>3. Filtros Digitais</h3>
+      <p><b>Sinal Limpo:</b> Filtros Passa-Altas e Passa-Baixas eliminam offset DC e ruídos de alta frequência da rede.</p>
+    </div>
+  </div>
+
+  <div class="metrics">
+    <div class="metric-item">
+      <h2>16.29 bits</h2>
+      <p>Resolução Efetiva (ENOB)</p>
+    </div>
+    <div class="metric-item">
+      <h2>52.5 µW</h2>
+      <p>Consumo do Modulador</p>
+    </div>
+    <div class="metric-item">
+      <h2>-40%</h2>
+      <p>Energia no Multiplicador</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
